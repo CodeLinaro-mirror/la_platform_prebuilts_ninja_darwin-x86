@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<manifest>
+  <remote name="aosp" fetch="https://android.googlesource.com/" review="https://android.googlesource.com/" />
+  <remote name="aospsuperproject" fetch="https://android.googlesource.com/" review="https://android.googlesource.com/" revision="ndk-kokoro-main" />
+  <default revision="master" remote="aosp" sync-j="4" />
+  <superproject name="platform/superproject" remote="aospsuperproject" />
+  <project path="external/ninja" name="platform/external/ninja" revision="097658f21e11a509e69e68f0565c5393151cf811" />
+  <project path="prebuilts/cmake/darwin-x86" name="platform/prebuilts/cmake/darwin-x86" revision="7aea7e9880110799088cd1de509886871078306f" />
+  <project path="prebuilts/ninja/darwin-x86" name="platform/prebuilts/ninja/darwin-x86" revision="6d6bb527d928b3e7c367174a3fb0e5c909e0a5c5" />
+  <project path="toolchain/ndk-kokoro" name="toolchain/ndk-kokoro" revision="f71eb25ea79c56f54b3cdc0f319ac2e7f0efaf1b" />
+</manifest>
